@@ -1,0 +1,141 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3833f2d0-0800-46ff-88ce-3831ec6a0171</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>face_recognition\face_recognition_cli.py</StartupFile>
+    <SearchPath>C:\Users\anil-ku\Source\Repos\face_recognition\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>face_recognition</Name>
+    <RootNamespace>face_recognition</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>C:\Users\anil-ku\Source\Repos\face_recognition\face_recognition\knownfaces\  C:\Users\anil-ku\Source\Repos\face_recognition\face_recognition\facesfolder</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="docs\conf.py" />
+    <Compile Include="examples\benchmark.py" />
+    <Compile Include="examples\blur_faces_on_webcam.py" />
+    <Compile Include="examples\digital_makeup.py" />
+    <Compile Include="examples\facerec_from_video_file.py" />
+    <Compile Include="examples\facerec_from_webcam.py" />
+    <Compile Include="examples\facerec_from_webcam_faster.py" />
+    <Compile Include="examples\facerec_from_webcam_multiprocessing.py" />
+    <Compile Include="examples\facerec_on_raspberry_pi.py" />
+    <Compile Include="examples\facerec_on_raspberry_pi_Simplified_Chinese.py" />
+    <Compile Include="examples\face_distance.py" />
+    <Compile Include="examples\face_recognition_knn.py" />
+    <Compile Include="examples\face_recognition_svm.py" />
+    <Compile Include="examples\find_faces_in_batches.py" />
+    <Compile Include="examples\find_faces_in_picture.py" />
+    <Compile Include="examples\find_faces_in_picture_cnn.py" />
+    <Compile Include="examples\find_facial_features_in_picture.py" />
+    <Compile Include="examples\identify_and_draw_boxes_on_faces.py" />
+    <Compile Include="examples\recognize_faces_in_pictures.py" />
+    <Compile Include="examples\web_service_example.py" />
+    <Compile Include="examples\web_service_example_Simplified_Chinese.py" />
+    <Compile Include="face_recognition\api.py" />
+    <Compile Include="face_recognition\face_detection_cli.py" />
+    <Compile Include="face_recognition\face_recognition_cli.py" />
+    <Compile Include="face_recognition\__init__.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="tests\test_face_recognition.py" />
+    <Compile Include="tests\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <Folder Include="examples\" />
+    <Folder Include="examples\ipynb_examples\" />
+    <Folder Include="examples\knn_examples\" />
+    <Folder Include="examples\knn_examples\test\" />
+    <Folder Include="examples\knn_examples\train\" />
+    <Folder Include="examples\knn_examples\train\alex_lacamoire\" />
+    <Folder Include="examples\knn_examples\train\biden\" />
+    <Folder Include="examples\knn_examples\train\kit_harington\" />
+    <Folder Include="examples\knn_examples\train\obama\" />
+    <Folder Include="examples\knn_examples\train\rose_leslie\" />
+    <Folder Include="face_recognition\" />
+    <Folder Include="tests\" />
+    <Folder Include="tests\test_images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\authors.rst" />
+    <Content Include="docs\contributing.rst" />
+    <Content Include="docs\face_recognition.rst" />
+    <Content Include="docs\history.rst" />
+    <Content Include="docs\index.rst" />
+    <Content Include="docs\installation.rst" />
+    <Content Include="docs\make.bat" />
+    <Content Include="docs\Makefile" />
+    <Content Include="docs\modules.rst" />
+    <Content Include="docs\readme.rst" />
+    <Content Include="docs\usage.rst" />
+    <Content Include="examples\alex-lacamoire.png" />
+    <Content Include="examples\biden.jpg" />
+    <Content Include="examples\hamilton_clip.mp4" />
+    <Content Include="examples\ipynb_examples\track_faces_on_video_realtime.ipynb" />
+    <Content Include="examples\knn_examples\test\alex_lacamoire1.jpg" />
+    <Content Include="examples\knn_examples\test\johnsnow_test1.jpg" />
+    <Content Include="examples\knn_examples\test\kit_with_rose.jpg" />
+    <Content Include="examples\knn_examples\test\obama1.jpg" />
+    <Content Include="examples\knn_examples\test\obama_and_biden.jpg" />
+    <Content Include="examples\knn_examples\train\alex_lacamoire\img1.jpg" />
+    <Content Include="examples\knn_examples\train\biden\biden.jpg" />
+    <Content Include="examples\knn_examples\train\biden\biden2.jpg" />
+    <Content Include="examples\knn_examples\train\kit_harington\john1.jpeg" />
+    <Content Include="examples\knn_examples\train\kit_harington\john2.jpeg" />
+    <Content Include="examples\knn_examples\train\obama\obama.jpg" />
+    <Content Include="examples\knn_examples\train\obama\obama2.jpg" />
+    <Content Include="examples\knn_examples\train\rose_leslie\img1.jpg" />
+    <Content Include="examples\knn_examples\train\rose_leslie\img2.jpg" />
+    <Content Include="examples\lin-manuel-miranda.png" />
+    <Content Include="examples\obama-1080p.jpg" />
+    <Content Include="examples\obama-240p.jpg" />
+    <Content Include="examples\obama-480p.jpg" />
+    <Content Include="examples\obama-720p.jpg" />
+    <Content Include="examples\obama.jpg" />
+    <Content Include="examples\obama2.jpg" />
+    <Content Include="examples\obama_small.jpg" />
+    <Content Include="examples\short_hamilton_clip.mp4" />
+    <Content Include="examples\two_people.jpg" />
+    <Content Include="tests\test_images\32bit.png" />
+    <Content Include="tests\test_images\biden.jpg" />
+    <Content Include="tests\test_images\obama.jpg" />
+    <Content Include="tests\test_images\obama2.jpg" />
+    <Content Include="tests\test_images\obama3.jpg" />
+    <Content Include="tests\test_images\obama_partial_face.jpg" />
+    <Content Include="tests\test_images\obama_partial_face2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
